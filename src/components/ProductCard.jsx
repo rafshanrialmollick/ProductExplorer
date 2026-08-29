@@ -1,10 +1,7 @@
 import React from 'react';
 import { Star, Tag, ShoppingCart } from 'lucide-react';
 
-/**
- * Product Card Component
- * Display per product: Image, Title, Price, Category
- */
+
 export function ProductCard({ product }) {
   const { title, price, category, thumbnail, images, rating, discountPercentage } = product;
   const imageSrc = thumbnail || (images && images[0]) || 'https://via.placeholder.com/300?text=No+Image';

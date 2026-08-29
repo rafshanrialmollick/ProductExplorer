@@ -1,11 +1,7 @@
-import React from 'react';
-import { ProductCard } from './ProductCard';
-import { SearchX } from 'lucide-react';
+import React from "react";
+import { ProductCard } from "./ProductCard";
+import { SearchX } from "lucide-react";
 
-/**
- * Product Grid Component
- * Renders grid of ProductCard components or empty state message.
- */
 export function ProductGrid({ products, onResetFilters }) {
   if (products.length === 0) {
     return (
@@ -13,9 +9,12 @@ export function ProductGrid({ products, onResetFilters }) {
         <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4 text-slate-400">
           <SearchX className="w-8 h-8" />
         </div>
-        <h3 className="text-lg font-bold text-slate-800 mb-1">No products found</h3>
+        <h3 className="text-lg font-bold text-slate-800 mb-1">
+          No products found
+        </h3>
         <p className="text-slate-500 text-sm max-w-md mx-auto mb-6">
-          We couldn't find any products matching your current search query or category filter.
+          We couldn't find any products matching your current search query or
+          category filter.
         </p>
         {onResetFilters && (
           <button

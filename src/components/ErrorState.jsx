@@ -1,11 +1,6 @@
 import React from 'react';
 import { AlertTriangle, RefreshCw } from 'lucide-react';
-/**
- * Error State Component
- * Display an error message if the API request fails, with a retry button.
- *
- * @param {{ error: string, onRetry: () => void }} props
- */
+
 export function ErrorState({ error, onRetry }) {
   return (
     <div className="bg-rose-50 border border-rose-200 rounded-2xl p-8 text-center my-8 max-w-xl mx-auto shadow-xs">

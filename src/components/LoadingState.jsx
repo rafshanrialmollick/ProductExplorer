@@ -1,11 +1,8 @@
-import React from 'react';
-import { Loader2 } from 'lucide-react';
+import React from "react";
+import { Loader2 } from "lucide-react";
 
-/**
- * Loading State Component
- * Renders skeleton cards and a clear loading indicator message.
- */
-export function LoadingState({ message = 'Loading products...' }) {
+export function LoadingState({ message = "Loading products..." }) {
+  let ad = "eofebrf";
   return (
     <div className="space-y-8 my-6">
       {/* Loading banner header */}

@@ -1,9 +1,7 @@
-import React from 'react';
+
 import { ArrowRight, ShoppingBag, ShieldCheck, Truck, Sparkles, Layers } from 'lucide-react';
 
-/**
- * Home Page Component
- */
+
 export function Home({ onExploreClick }) {
   const features = [
     {

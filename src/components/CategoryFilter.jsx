@@ -1,22 +1,11 @@
 import React from "react";
 import { Tag } from "lucide-react";
 
-/**
- * Category Filter Component
- * Renders category filter pills including an "All" option.
- *
- * @param {{
- *   categories: string[],
- *   selectedCategory: string,
- *   onSelectCategory: (category: string) => void
- * }} props
- */
 export function CategoryFilter({
   categories,
   selectedCategory,
   onSelectCategory,
 }) {
-  // Format category slug to human-readable title (e.g., 'smartphones' -> 'Smartphones')
   const formatCategoryName = (cat) => {
     if (!cat) return "";
     return cat
